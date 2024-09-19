@@ -1,0 +1,73 @@
+body{
+  font-family: Arial;
+  overscroll-behavior: none;
+  touch-action: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+html{
+  overscroll-behavior: none;
+}
+#content{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align: center;
+}
+#myCanvas{
+  width:400px;
+  height:400px;
+  box-shadow: 0px 0px 10px 2px #000;
+}
+ #logo{
+  border-radius: 50%;
+  width:150px;
+  height: 150px;
+  object-fit: cover;
+  
+}
+ #brand{
+  border-radius: 50%;
+  width:50px;
+  object-fit: cover;
+}
+
+button{
+  cursor:pointer;
+  border: none;
+  padding: 2px 10px 2px 10px;
+  border-radius: 5px;
+}
+
+#tools{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#student{
+  text-align:center;
+}
+
+#top{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+#instructions{
+  text-align:left;
+  margin:4px;
+  width:195px;
+}
+
+/* #right{
+
+} */
+
+#nextBtn{
+  margin-left:10px;
+  background: #8ec81c;
+}

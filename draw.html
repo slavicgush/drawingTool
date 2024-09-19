@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=0.9, maximum-scale=0.9, user-scalable=0"
+    />
+    <title>Draw 4 ML Course</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/drawing.js" defer></script>
+  </head>
+  <body>
+    <div id="content">
+      <img id="logo" src="images/hulk.jpg" />
+      <br />
+
+      <div id="top">
+        <img id="brand" src="images/jason.jpg" style="display: none" /><input
+          id="student"
+          type="text"
+          placeholder="type your name"
+        />
+
+        <span id="instructions" style="display: none"></span>
+        <div id="right">
+          <button id="nextBtn" onclick="next();">Start</button>
+          <div id="drIndex"></div>
+        </div>
+      </div>
+      <br />
+      <div id="drawingArea" style="display: none">
+        <canvas id="myCanvas"></canvas>
+        <br />
+        <div id="tools">
+          <button id="undo" onclick="doUndo();" title="Undo last line">
+            UNDO
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
